@@ -1,0 +1,78 @@
+@font-title: Georgia, serif;
+@font-nav: "DeJaVu Sans", sans-serif;
+
+@colour-main: #005D65;
+
+.no-spacing {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  .no-spacing();
+}
+
+h1 {
+  font-family: @font-title;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: blue;
+  }
+}
+
+nav {
+  padding: 15px 25px;
+  background: @colour-main;
+  color: white;
+  margin: 0;
+
+  font-family: @font-nav;
+
+  header {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+      padding: 0 12px;
+
+      a {
+        color: white;
+        padding: 31px 18px;
+        &:hover {
+          color: @colour-main;
+          background-color: white;
+        }
+
+        @media (max-width: 654px) {
+          padding: 12px;
+        }
+
+        @media (max-width: 366px) {
+          padding: 0;
+        }
+      }
+
+      @media (max-width: 654px) {
+        padding: 0 ;
+      }
+    }
+
+    @media (max-width: 654px) {
+      padding: 0 10px;
+    }
+
+    @media (max-width: 366px) {
+      padding: 0;
+    }
+  }
+}
+
+
