@@ -1,31 +1,19 @@
-.no-spacing {
-  margin: 0;
-  padding: 0;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  font-family: Georgia, serif;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: blue;
-}
 nav {
   padding: 15px 25px;
-  background: #005D65;
+  background: #004225;
   color: white;
   margin: 0;
-  font-family: "DeJaVu Sans", sans-serif;
+  font-family: "Source Sans Pro", Verdana, "DeJaVu Sans", sans-serif;
+  font-weight: 700;
+}
+nav .container {
+  background: #004225;
+  padding: 0;
 }
 nav header {
   display: inline-block;
   font-size: 25px;
-  font-weight: bold;
+  margin: 0 0 0 1rem;
 }
 nav ul {
   display: inline-block;
@@ -38,8 +26,12 @@ nav ul li a {
   color: white;
   padding: 31px 18px;
 }
+nav ul li a.active {
+  color: #004225;
+  background: white;
+}
 nav ul li a:hover {
-  color: #005D65;
+  color: #004225;
   background-color: white;
 }
 @media (max-width: 654px) {
@@ -66,4 +58,70 @@ nav ul li a:hover {
   nav ul {
     padding: 0;
   }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", Verdana, "DeJaVu Sans", sans-serif;
+  font-weight: 400;
+  background: #e8e8e8;
+}
+h1 {
+  font-family: "Source Sans Pro", Verdana, "DeJaVu Sans", sans-serif;
+  font-weight: 700;
+  color: #004225;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px #004225 solid;
+}
+P {
+  font-size: 16px;
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 0 0.5rem 0;
+  max-width: 768px;
+  background: white;
+}
+.content {
+  background: white;
+  margin: 0;
+  padding: 0;
+  padding: 1rem;
+}
+.centered-popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(50, 50, 50, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.centered-popup .container {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.centered-popup .container * {
+  padding: 0.5rem;
+}
+.centered-popup .container .btn {
+  padding: 0.25rem;
+  margin: 0 1rem;
+  background-color: green;
+  color: white;
 }

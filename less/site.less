@@ -1,19 +1,31 @@
-@font-title: Georgia, serif;
-@font-nav: "DeJaVu Sans", sans-serif;
+@import 'variables.less';
+@import 'nav.less';
 
-@colour-main: #005D65;
-
-.no-spacing {
+.no-spacing() {
   margin: 0;
   padding: 0;
 }
 
 body {
   .no-spacing();
+  font-family: @font-main;
+  font-weight: @font-normal;
+  background: @colour-background;
 }
 
 h1 {
-  font-family: @font-title;
+  font-family: @font-main;
+  font-weight: @font-bold;
+  color: @colour-brg;
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  border-bottom: 2px @colour-brg solid;
+}
+
+P {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 a {
@@ -23,56 +35,49 @@ a {
   }
 }
 
-nav {
-  padding: 15px 25px;
-  background: @colour-main;
-  color: white;
-  margin: 0;
-
-  font-family: @font-nav;
-
-  header {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  ul {
-    display: inline-block;
-    li {
-      display: inline-block;
-      padding: 0 12px;
-
-      a {
-        color: white;
-        padding: 31px 18px;
-        &:hover {
-          color: @colour-main;
-          background-color: white;
-        }
-
-        @media (max-width: 654px) {
-          padding: 12px;
-        }
-
-        @media (max-width: 366px) {
-          padding: 0;
-        }
-      }
-
-      @media (max-width: 654px) {
-        padding: 0 ;
-      }
-    }
-
-    @media (max-width: 654px) {
-      padding: 0 10px;
-    }
-
-    @media (max-width: 366px) {
-      padding: 0;
-    }
-  }
+.container {
+  margin: 0 auto;
+  padding: 0 0 0.5rem 0;
+  max-width: 768px;
+  background: white;
 }
 
 
+.content {
+  background: white;
+  .no-spacing();
+  padding: 1rem;
+}
+
+.centered-popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(50,50,50,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .container {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border-radius: 10px;
+
+    * {
+      padding: 0.5rem;
+    }
+
+    .btn {
+      padding: 0.25rem;
+      margin: 0 1rem;
+      background-color: green;
+      color: white;
+    }
+  }
+
+}

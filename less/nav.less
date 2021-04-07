@@ -1,0 +1,61 @@
+@import "variables.less";
+
+nav {
+  padding: 15px 25px;
+  background: @colour-brg;
+  color: white;
+  margin: 0;
+  font-family: @font-main;
+  font-weight: 700;
+  .container {
+    background: @colour-brg;
+    padding: 0;
+  }
+
+  header {
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 0 0 1rem;
+  }
+
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+      padding: 0 12px;
+
+      a {
+        color: white;
+        padding: 31px 18px;
+        &.active {
+          color: @colour-brg;
+          background: white;
+        }
+        &:hover {
+          color: @colour-brg;
+          background-color: white;
+        }
+
+        @media (max-width: 654px) {
+          padding: 12px;
+        }
+
+        @media (max-width: 366px) {
+          padding: 0;
+        }
+      }
+
+      @media (max-width: 654px) {
+        padding: 0 ;
+      }
+    }
+
+    @media (max-width: 654px) {
+      padding: 0 10px;
+    }
+
+    @media (max-width: 366px) {
+      padding: 0;
+    }
+  }
+}
