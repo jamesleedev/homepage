@@ -125,3 +125,11 @@ a:hover {
   background-color: green;
   color: white;
 }
+footer p {
+  display: inline;
+  margin-right: 20px;
+  font-size: 0.75rem;
+}
+footer .content {
+  padding-bottom: 0;
+}
