@@ -7,10 +7,6 @@
     <?php include "../src/templates/head.php"; ?>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCVRLNB"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <nav>
     <div class="container">
         <header>jamesl.dev</header>
