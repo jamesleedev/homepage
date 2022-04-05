@@ -1,14 +1,14 @@
-@import "variables.less";
+@import "../utils/variables";
 
 nav {
   padding: 15px 25px;
-  background: @colour-brg;
+  background: $colour-brg;
   color: white;
   margin: 0;
-  font-family: @font-main;
+  font-family: $font-main;
   font-weight: 700;
   .container {
-    background: @colour-brg;
+    background: $colour-brg;
     padding: 0;
   }
 
@@ -28,11 +28,11 @@ nav {
         color: white;
         padding: 31px 18px;
         &.active {
-          color: @colour-brg;
+          color: $colour-brg;
           background: white;
         }
         &:hover {
-          color: @colour-brg;
+          color: $colour-brg;
           background-color: white;
         }
 

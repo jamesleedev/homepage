@@ -1,26 +1,26 @@
-@import 'variables.less';
-@import 'nav.less';
+@import 'utils/variables';
+@import 'components/nav';
 
-.no-spacing() {
+@mixin no-spacing {
   margin: 0;
   padding: 0;
 }
 
 body {
-  .no-spacing();
-  font-family: @font-main;
-  font-weight: @font-normal;
-  background: @colour-background;
+  @include no-spacing;
+  font-family: $font-main;
+  font-weight: $font-normal;
+  background: $colour-background;
 }
 
 h1 {
-  font-family: @font-main;
-  font-weight: @font-bold;
-  color: @colour-brg;
+  font-family: $font-main;
+  font-weight: $font-bold;
+  color: $colour-brg;
   margin: 0;
   padding: 0.5rem 1rem;
 
-  border-bottom: 2px @colour-brg solid;
+  border-bottom: 2px $colour-brg solid;
 }
 
 P {
@@ -44,8 +44,8 @@ a {
 
 
 .content {
+  @include no-spacing;
   background: white;
-  .no-spacing();
   padding: 1rem;
 }
 
