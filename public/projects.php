@@ -13,7 +13,7 @@
         <ul>
             <li><a href="/">ABOUT</a></li>
             <li><a href="#" class="active">PROJECTS</a></li>
-            <li><a href="contact.php">CONTACT</a></li>
+            <li><a href="/contact">CONTACT</a></li>
         </ul>
     </div>
 </nav>

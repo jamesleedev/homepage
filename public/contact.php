@@ -16,7 +16,7 @@
         <header>jamesl.dev</header>
         <ul>
             <li><a href="/">ABOUT</a></li>
-            <li><a href="projects.php">PROJECTS</a></li>
+            <li><a href="/projects">PROJECTS</a></li>
             <li><a href="#" class="active">CONTACT</a></li>
         </ul>
     </div>
