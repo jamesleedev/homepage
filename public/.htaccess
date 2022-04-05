@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.php
+
+RewriteEngine on
+
+## Removing PHP extensions
+Options -MultiViews
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php  [NC,L]
+

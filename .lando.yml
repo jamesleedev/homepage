@@ -1,0 +1,8 @@
+name: jamesl-dev
+recipe: lamp
+config:
+  php: 7.4
+  composer_version: 2.3.3
+  webroot: 'public'
+  database: mariadb:10.3
+  xdebug: true
