@@ -30,8 +30,12 @@ P {
 
 a {
   text-decoration: none;
+  color: $colour-brg;
   &:hover {
-    color: blue;
+    color: #00a960;
+  }
+  &:visited {
+    color: $colour-brg;
   }
 }
 
