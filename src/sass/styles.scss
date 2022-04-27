@@ -30,12 +30,13 @@ P {
 
 a {
   text-decoration: none;
+  font-weight: 700;
   color: $colour-brg;
-  &:hover {
-    color: #00a960;
-  }
   &:visited {
     color: $colour-brg;
+  }
+  &:hover {
+    color: #00a960;
   }
 }
 
