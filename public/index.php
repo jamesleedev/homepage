@@ -14,8 +14,8 @@
     <meta property="og:title" content="<?= $title ?>">
     <meta property="og:description" content="<?= $description ?>">
     <?php include "../src/templates/head.php"; ?>
-    <meta property="twitter:title" content="<?= $title ?>">
-    <meta property="twitter:description" content="<?= $description ?>">
+    <meta name="twitter:title" content="<?= $title ?>">
+    <meta name="twitter:description" content="<?= $description ?>">
 </head>
 <body>
 <nav>

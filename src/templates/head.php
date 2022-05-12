@@ -16,8 +16,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
 <meta property="og:image:alt" content="jamesl.dev">
-<meta property="twitter:card" content="summary">
-<meta property="twitter:site" content="@jamesldev">
-<meta property="twitter:creator" content="@jamesldev">
-<meta property="twitter:image" content="https://jamesl.dev/img/og-square.png">
-<meta property="twitter:image:alt" content="jamesl.dev">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@jamesldev">
+<meta name="twitter:creator" content="@jamesldev">
+<meta name="twitter:image" content="https://jamesl.dev/img/og-image.png">
+<meta name="twitter:image:alt" content="jamesl.dev">
