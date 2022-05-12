@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="404 Page not found.">
+    <meta name="robots" content="noindex">
     <title>404 | jamesl.dev</title>
     <?php include "../src/templates/head.php"; ?>
 </head>

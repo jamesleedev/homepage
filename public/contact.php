@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="How to get in touch with me.">
     <title>Contact Info | jamesl.dev</title>
+    <meta property="og:url" content="https://jamesl.dev/contact">
+    <meta property="og:title" content="Contact Info | jamesl.dev">
+    <meta property="og:description" content="How to get in touch with me.">
     <?php include "../src/templates/head.php"; ?>
 </head>
 <body>

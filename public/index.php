@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="You've reached the home of James.">
+    <meta name="description" content="You've reached the home of James - Junior Software Developer at ACCOINTING.com, coding in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.">
     <title>Home | jamesl.dev</title>
+    <meta property="og:url" content="https://jamesl.dev">
+    <meta property="og:title" content="Home | jamesl.dev">
+    <meta property="og:description" content="You've reached the home of James - Junior Software Developer at ACCOINTING.com, coding in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.">
     <?php include "../src/templates/head.php"; ?>
 </head>
 <body>

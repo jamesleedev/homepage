@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="My current and upcoming projects.">
+    <meta name="description" content="My current and upcoming projects. Upcoming projects outside of ACCOINTING.com are websites for Serpex Limited, and my personal UK train review blog.">
     <title>Projects | jamesl.dev</title>
+    <meta property="og:url" content="https://jamesl.dev/projects">
+    <meta property="og:title" content="Projects | jamesl.dev">
+    <meta property="og:description" content="My current and upcoming projects. Upcoming projects outside of ACCOINTING.com are websites for Serpex Limited, and my personal UK train review blog.">
     <?php include "../src/templates/head.php"; ?>
 </head>
 <body>
