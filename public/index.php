@@ -1,13 +1,21 @@
+<?php
+    $title = "Home | jamesl.dev";
+    $description = "You've reached the home of James - Junior Software Developer at ACCOINTING.com, coding in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.";
+    $fullUrl = "https://jamesl.dev";
+?>
+
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="You've reached the home of James - Junior Software Developer at ACCOINTING.com, coding in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.">
-    <title>Home | jamesl.dev</title>
-    <meta property="og:url" content="https://jamesl.dev">
-    <meta property="og:title" content="Home | jamesl.dev">
-    <meta property="og:description" content="You've reached the home of James - Junior Software Developer at ACCOINTING.com, coding in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.">
+    <meta charset="utf-8">
+    <meta name="description" content="<?= $description ?>">
+    <title><?= $title ?></title>
+    <meta property="og:url" content="<?= $fullUrl ?>">
+    <meta property="og:title" content="<?= $title ?>">
+    <meta property="og:description" content="<?= $description ?>">
     <?php include "../src/templates/head.php"; ?>
+    <meta property="twitter:title" content="<?= $title ?>">
+    <meta property="twitter:description" content="<?= $description ?>">
 </head>
 <body>
 <nav>

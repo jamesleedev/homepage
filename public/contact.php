@@ -1,13 +1,21 @@
+<?php
+    $title = "Contact Info | jamesl.dev";
+    $description = "How to get in touch with me.";
+    $fullUrl = "https://jamesl.dev/contact";
+?>
+
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="How to get in touch with me.">
-    <title>Contact Info | jamesl.dev</title>
-    <meta property="og:url" content="https://jamesl.dev/contact">
-    <meta property="og:title" content="Contact Info | jamesl.dev">
-    <meta property="og:description" content="How to get in touch with me.">
+    <meta charset="utf-8">
+    <meta name="description" content="<?= $description ?>">
+    <title><?= $title ?></title>
+    <meta property="og:url" content="<?= $fullUrl ?>">
+    <meta property="og:title" content="<?= $title ?>">
+    <meta property="og:description" content="<?= $description ?>">
     <?php include "../src/templates/head.php"; ?>
+    <meta property="twitter:title" content="<?= $title ?>">
+    <meta property="twitter:description" content="<?= $description ?>">
 </head>
 <body>
 <nav>
