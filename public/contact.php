@@ -1,11 +1,11 @@
 <?php
     $title = "Contact Info | jamesl.dev";
     $description = "How to get in touch with me.";
-    $fullUrl = "https://jamesl.dev/contact";
+    $fullUrl = "https://www.jamesl.dev/contact";
 ?>
 
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en-GB" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="<?= $description ?>">

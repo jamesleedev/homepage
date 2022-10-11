@@ -1,11 +1,11 @@
 <?php
     $title = "Projects | jamesl.dev";
     $description = "My current and upcoming projects. Upcoming projects outside of ACCOINTING.com are websites for Serpex Limited, and my personal UK train review blog.";
-    $fullUrl = "https://jamesl.dev/projects";
+    $fullUrl = "https://www.jamesl.dev/projects";
 ?>
 
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en-GB" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="<?= $description ?>">

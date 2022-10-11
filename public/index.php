@@ -1,11 +1,11 @@
 <?php
     $title = "Home | jamesl.dev";
     $description = "You've reached the home of James - Junior Software Developer at ACCOINTING.com, coding in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.";
-    $fullUrl = "https://jamesl.dev";
+    $fullUrl = "https://www.jamesl.dev";
 ?>
 
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en-GB" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="<?= $description ?>">
@@ -49,7 +49,7 @@
             Even though I'm a front end dev, I have literally no design skills. I am somewhat opinionated about front end development in that unnecessary complexity should always be avoided.
         </p>
         <p>
-            My PGP key can be found in <a href="https://jamesl.dev/pgp.txt">/pgp.txt</a>
+            My PGP key can be found in <a href="https://www.jamesl.dev/pgp.txt">/pgp.txt</a>
         </p>
     </section>
 </main>
