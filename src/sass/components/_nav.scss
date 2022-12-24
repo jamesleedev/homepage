@@ -1,4 +1,4 @@
-@import "../theme/variables";
+@import "../theme/theme";
 
 $nav-height-desktop: 5rem;
 $nav-height-mobile: 1.5rem;
@@ -12,7 +12,7 @@ header {
     padding: 0 2rem;
     background: $colour-brg;
 
-    @media screen and (max-width: $bp-sm - 0.02px) {
+    @include mq-mobile {
       padding: 0 1rem;
     }
   }
@@ -32,7 +32,7 @@ header {
   flex-wrap: wrap;
   row-gap: 1rem;
 
-  @media screen and (max-width: $bp-sm - 0.02px) {
+  @include mq-mobile {
     justify-content: space-between;
     align-items: center;
     line-height: $nav-height-mobile;
@@ -54,7 +54,7 @@ header {
     row-gap: 0;
     flex-wrap: wrap;
 
-    @media screen and (max-width: $bp-sm - 0.02px) {
+    @include mq-mobile {
       flex-direction: column;
       column-gap: 0;
       row-gap: 1rem;
@@ -83,7 +83,7 @@ header {
         margin-right: 0;
       }
 
-      @media screen and (max-width: $bp-sm - 0.02px) {
+      @include mq-mobile {
         line-height: $nav-height-mobile;
         padding: 0 0.5rem;
         min-width: 6rem;

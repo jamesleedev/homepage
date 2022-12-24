@@ -1,10 +1,5 @@
-@import 'theme/variables';
+@import 'theme/theme';
 @import 'components/nav';
-
-@mixin no-spacing {
-  margin: 0;
-  padding: 0;
-}
 
 body {
   @include no-spacing;
@@ -60,7 +55,7 @@ footer {
     display: flex;
     column-gap: 2rem;
 
-    @media screen and (max-width: $bp-sm - 0.02px) {
+    @include mq-mobile {
       flex-direction: column;
       column-gap: 0;
       row-gap: 1rem;
