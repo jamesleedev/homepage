@@ -14,7 +14,7 @@
 
 <footer class="container">
     <div class="content">
-        <p>&copy; James Lee <?php echo date("Y"); ?></p>
-        <p><?= getLastModified(); ?></p>
+        <span>&copy; James Lee <?php echo date("Y"); ?></span>
+        <span><?= getLastModified(); ?></span>
     </div>
 </footer>

@@ -55,12 +55,19 @@ a {
 }
 
 footer {
-  p {
-    display: inline;
-    margin-right: 20px;
-    font-size: 0.75rem;
-  }
   .content {
-    padding-bottom: 0;
+    padding: 2rem 0 0 1rem;
+    display: flex;
+    column-gap: 2rem;
+
+    @media screen and (max-width: $bp-sm - 0.02px) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 1rem;
+    }
+  }
+
+  span {
+    font-size: 0.75rem;
   }
 }
