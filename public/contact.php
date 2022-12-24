@@ -2,6 +2,8 @@
     $title = "Contact Info | jamesl.dev";
     $description = "How to get in touch with me.";
     $fullUrl = "https://www.jamesl.dev/contact";
+
+    require '../src/utils/include_args.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,16 +20,11 @@
     <meta name="twitter:description" content="<?= $description ?>">
 </head>
 <body>
-<nav>
-    <div class="container">
-        <header>jamesl.dev</header>
-        <ul>
-            <li><a href="/">ABOUT</a></li>
-            <li><a href="/projects">PROJECTS</a></li>
-            <li><a href="#" class="active">CONTACT</a></li>
-        </ul>
-    </div>
-</nav>
+<?php include_args('../src/templates/nav.php', ['links'=>[
+    'ABOUT' => ['url'=>'/', 'active'=>false],
+    'PROJECTS' => ['url'=>'/projects', 'active'=>false],
+    'CONTACT' => ['url'=>'#', 'active'=>true],
+]]); ?>
 <main class="container">
     <section class="content">
         <h1>Contact Information</h1>
@@ -38,7 +35,7 @@
             <b>GitHub: </b><a href="https://github.com/jamesldotdev">jamesldotdev</a>
         </p>
         <p>
-            <b>LinkedIn: </b><a href="https://www.linkedin.com/in/james-lee-54106b101/">https://www.linkedin.com/in/james-lee-54106b101/</a>
+            <b>LinkedIn: </b><a href="https://www.linkedin.com/in/james-lee-54106b101/">https://www.linkedin.com/in/jamesl-dev/</a>
         </p>
     </section>
 </main>

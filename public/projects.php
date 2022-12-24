@@ -2,6 +2,8 @@
     $title = "Projects | jamesl.dev";
     $description = "My current and upcoming projects. Upcoming projects outside of ACCOINTING.com are websites for Serpex Limited, and my personal UK train review blog.";
     $fullUrl = "https://www.jamesl.dev/projects";
+
+    require '../src/utils/include_args.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,16 +20,11 @@
     <meta name="twitter:description" content="<?= $description ?>">
 </head>
 <body>
-<nav>
-    <div class="container">
-        <header>jamesl.dev</header>
-        <ul>
-            <li><a href="/">ABOUT</a></li>
-            <li><a href="#" class="active">PROJECTS</a></li>
-            <li><a href="/contact">CONTACT</a></li>
-        </ul>
-    </div>
-</nav>
+<?php include_args('../src/templates/nav.php', ['links'=>[
+    'ABOUT' => ['url'=>'/', 'active'=>false],
+    'PROJECTS' => ['url'=>'#', 'active'=>true],
+    'CONTACT' => ['url'=>'/contact', 'active'=>false],
+]]); ?>
 <main class="container">
     <section class="content">
         <h1>Current and future side projects</h1>

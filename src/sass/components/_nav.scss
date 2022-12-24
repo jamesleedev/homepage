@@ -1,61 +1,74 @@
-@import "../utils/variables";
+@import "../theme/variables";
 
-nav {
-  padding: 15px 25px;
+$nav-height: 5rem;
+$transition-nav: all 100ms linear;
+
+header {
+  width: 100%;
+  background: $colour-brg;
+
+  .container {
+    padding: 0 2rem;
+    background: $colour-brg;
+
+    @media screen and (max-width: $bp-sm - 0.02px) {
+      padding: 0 1rem;
+    }
+  }
+}
+
+.nav {
+  padding: 0;
   background: $colour-brg;
   color: white;
   margin: 0;
+  line-height: $nav-height;
   font-family: $font-main;
   font-weight: 700;
-  .container {
-    background: $colour-brg;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: $bp-sm - 0.02px) {
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: left;
   }
 
-  header {
+  &__header {
     display: inline-block;
     font-size: 25px;
-    margin: 0 0 0 1rem;
+    margin: 0;
+
+    @media screen and (max-width: $bp-sm - 0.02px) {
+      display: none;
+    }
   }
 
-  ul {
-    display: inline-block;
-    li {
+  &__links {
+    @media screen and (max-width: $bp-sm - 0.02px) {
+      position: sticky;
+      top: 0;
+    }
+
+    a {
+      font-size: 1rem;
+      color: white;
+      padding: 0 1rem;
+      line-height: $nav-height;
       display: inline-block;
-      padding: 0 12px;
+      margin-left: 1rem;
+      transition: $transition-nav;
+      font-weight: $font-bold;
 
-      a {
-        color: white;
-        padding: 31px 18px;
-        &.active {
-          color: $colour-brg;
-          background: white;
-        }
-        &:hover {
-          color: $colour-brg;
-          background-color: white;
-        }
-
-        @media (max-width: 654px) {
-          padding: 12px;
-        }
-
-        @media (max-width: 366px) {
-          padding: 0;
-        }
+      &:hover, &.active {
+        color: $colour-brg;
+        background: white;
       }
 
-      @media (max-width: 654px) {
-        padding: 0 ;
+      &.active {
+        cursor: default;
       }
-    }
-
-    @media (max-width: 654px) {
-      padding: 0 10px;
-    }
-
-    @media (max-width: 366px) {
-      padding: 0;
     }
   }
 }
