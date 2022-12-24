@@ -30,7 +30,7 @@
         <h1>Who am I?</h1>
         <p>
             I'm a front end developer working on React/Next.js at <a href="https://www.accointing.com" target="_blank" rel="nofollow noreferrer">Accointing by Glassnode</a>, based near Bristol and currently working full time.
-            I am also a backend developer at <a href="https://serpex.co.uk" target="_blank" rel="nofollow noreferrer">Serpex Studios</a>. I'm not currently looking for new opportunities, but you can drop me a message anytime using my contact details.
+            I am also a backend developer at <a href="https://serpex.co.uk" target="_blank" rel="nofollow noreferrer">Serpex Studios</a> in my spare time. I'm not currently looking for new opportunities, but you can drop me a message anytime using my contact details.
         </p>
         <p>
             I've been using Linux and coding recreationally for about 7 years, and I am experienced in Python and PHP, working with WordPress specifically.
@@ -41,9 +41,6 @@
         </p>
         <p>
             Innis & Gunn and Laphroaig 10 are probably my favourite drinks at the moment.
-        </p>
-        <p>
-            Even though I'm a front end dev, I have literally no design skills. I am somewhat opinionated about front end development in that unnecessary complexity should always be avoided, bundling a ton of JS is terrible. My favourite colour right now is green as you can see.
         </p>
         <p>
             My PGP key can be found in <a href="https://www.jamesl.dev/pgp.txt">/pgp.txt</a>

@@ -51,7 +51,7 @@ a {
 .content {
   @include no-spacing;
   background: $colour-background;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 footer {
