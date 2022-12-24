@@ -1,3 +1,7 @@
+<?php
+require '../src/utils/include_args.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -8,19 +12,15 @@
     <?php include "../src/templates/head.php"; ?>
 </head>
 <body>
-<nav>
-    <div class="container">
-        <header>jamesl.dev</header>
-        <ul>
-            <li><a href="/">ABOUT</a></li>
-            <li><a href="/projects">PROJECTS</a></li>
-            <li><a href="/contact">CONTACT</a></li>
-        </ul>
-    </div>
-</nav>
+<?php include_args('../src/templates/nav.php', ['links'=>[
+    'ABOUT' => ['url'=>'/', 'active'=>false],
+    'PROJECTS' => ['url'=>'/projects', 'active'=>false],
+    'CONTACT' => ['url'=>'#', 'active'=>false],
+]]); ?>
 <main class="container">
     <section class="content">
         <h1>404 Page Not Found.</h1>
+        <p>Please try another page using the navigation above.</p>
     </section>
 </main>
 <?php include "../src/templates/footer.php" ?>

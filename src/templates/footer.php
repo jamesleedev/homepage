@@ -9,12 +9,19 @@
         if (array_key_exists($request, $filemap) ) {
             return "Last updated " . date("d F Y", filemtime($filemap[$request]));
         }
+        else {
+            return null;
+        }
     }
+
+    $lastModified = getLastModified();
 ?>
 
 <footer class="container">
     <div class="content">
         <span>&copy; James Lee <?php echo date("Y"); ?></span>
-        <span><?= getLastModified(); ?></span>
+        <?php if ($lastModified !== null): ?>
+            <span><?= $lastModified; ?></span>
+        <?php endif; ?>
     </div>
 </footer>
