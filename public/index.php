@@ -29,11 +29,10 @@
     <section class="content">
         <h1>Who am I?</h1>
         <p>
-            I'm a front end developer working on React/Next.js at <a href="https://www.accointing.com" target="_blank" rel="nofollow noreferrer">Accointing by Glassnode</a>, based near Bristol and currently working full time.
-            I am also a backend developer at <a href="https://serpex.co.uk" target="_blank" rel="nofollow noreferrer">Serpex Studios</a> in my spare time. I'm not currently looking for new opportunities, but you can drop me a message anytime using my contact details.
+            I'm a front end developer working on React/Next.js at <a href="https://www.accointing.com" target="_blank" rel="nofollow noreferrer">Accointing by Glassnode</a>, based near Bristol and currently working full time. I'm not currently looking for new opportunities, but you can drop me a message anytime using my contact details.
         </p>
         <p>
-            I've been using Linux and coding recreationally for about 7 years, and I am experienced in Python and PHP, working with WordPress specifically.
+            I've been using Linux and coding recreationally for about 7 years, and I am experienced in Python and PHP, working with WordPress specifically. Now I've worked with React and Next.js for close to 2 years.
             Currently dual booting Fedora and Windows, with my distro history being Ubuntu then straight to Fedora as around 18.04 everything broke for me, and I run KDE at the moment, but was a long time MATE user.
         </p>
         <p>
@@ -45,6 +44,32 @@
         <p>
             My PGP key can be found in <a href="https://www.jamesl.dev/pgp.txt">/pgp.txt</a>
         </p>
+    </section>
+    <section class="content">
+        <h2>Some professional stuff:</h2>
+        <h3>Education</h3>
+        <p>
+            Diploma of Higher Education - Computer Science
+        </p>
+        <p>
+            @ Heriot-Watt University, UK
+        </p>
+        <h3>Experience</h3>
+        <header>
+            <h4>Accointing by Glassnode</h4>
+            <p>August 2021 - </p>
+        </header>
+        <p>Working in small, cross-functional product teams to deliver features.</p>
+        <h5>Skills</h5>
+        <p>Next.js, React, Typescript, Docker, Headless CMS, Git, TailwindCSS, WordPress, PHP</p>
+        <hr>
+        <header>
+            <h4>Freelancing</h4>
+            <p>August 2020 - August 2021.</p>
+        </header>
+        <p>Working with clients to create and maintain product pages using WooCommerce. Created custom email templates.</p>
+        <h5>Skills</h5>
+        <p>WordPress, PHP, API, Webhooks, WooCommerce, HTML/CSS</p>
     </section>
 </main>
 <?php include "../src/templates/footer.php" ?>

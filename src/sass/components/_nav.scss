@@ -4,7 +4,7 @@ $nav-height-desktop: 5rem;
 $nav-height-mobile: 1.5rem;
 $transition-nav: all 100ms linear;
 
-header {
+.navbar {
   width: 100%;
   background: $colour-brg;
 
@@ -24,8 +24,9 @@ header {
   color: white;
   margin: 0;
   line-height: $nav-height-desktop;
-  font-family: $font-main;
+  font-family: $font-header;
   font-weight: 700;
+  letter-spacing: 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,4 +1,4 @@
-<header>
+<div class="navbar">
     <div class="container">
         <nav class="nav">
             <div class="nav__header"><p>jamesl.dev</p></div>
@@ -9,4 +9,4 @@
             </div>
         </nav>
     </div>
-</header>
+</div>

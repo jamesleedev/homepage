@@ -8,21 +8,42 @@ body {
   background: $colour-background;
 }
 
-h1 {
-  font-family: $font-main;
+h1, h2, h3, h4, h5 {
+  font-family: $font-header;
   font-weight: $font-bold;
-  color: $colour-brg;
   margin: 0;
-  padding: 0.5rem 1rem;
+  color: $colour-brg;
+  line-height: 1.2;
+}
 
+h1, h2 {
+  padding: 0.5rem 1rem;
   border-bottom: 2px $colour-brg solid;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 2rem 1rem 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  padding: 1rem 1rem 0;
+}
+
+h5 {
+  font-size: 1rem;
+  font-style: italic;
+  padding: 0.5rem 1rem 0;
 }
 
 P {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin: 0.5rem 0 1rem;
 }
 
 a {
@@ -42,11 +63,27 @@ a {
   background: $colour-background;
 }
 
-
 .content {
   @include no-spacing;
   background: $colour-background;
   padding: 1rem 0;
+
+  hr {
+    width: 30%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $colour-brg;
+    margin: 2rem auto 1rem;
+    padding: 0;
+  }
+}
+
+header {
+  p {
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
 }
 
 footer {
