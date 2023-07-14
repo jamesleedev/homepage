@@ -1,4 +1,4 @@
-$font-main: "Inter", Verdana, "DeJaVu Sans", sans-serif;
+$font-main: "Inter", Arial, "DeJaVu Sans", sans-serif;
 $font-header: "Inconsolata", monospace;
 
 $font-bold: 700;
@@ -16,4 +16,4 @@ $bp-xl: 1200px;
 
 $container-width: 720px;
 
-$transition-default: all 200ms ease-in-out;
+$transition-default: background-color 200ms ease-in-out, color 200ms ease-in-out;

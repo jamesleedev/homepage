@@ -2,7 +2,7 @@
 
 $nav-height-desktop: 5rem;
 $nav-height-mobile: 1.5rem;
-$transition-nav: all 100ms linear;
+$transition-nav: background-color 100ms linear, color 100ms linear;
 
 .navbar {
   width: 100%;
