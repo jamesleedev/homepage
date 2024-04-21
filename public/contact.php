@@ -32,7 +32,7 @@
             <b>Email: </b>james [at] jamesl [dot] dev
         </p>
         <p>
-            <b>GitHub: </b><a href="https://github.com/jamesldotdev">jamesldotdev</a>
+            <b>GitHub: </b><a href="https://github.com/jamesleedev">jamesleedev</a>
         </p>
         <p>
             <b>LinkedIn: </b><a href="https://www.linkedin.com/in/james-lee-54106b101/">https://www.linkedin.com/in/jamesl-dev/</a>
