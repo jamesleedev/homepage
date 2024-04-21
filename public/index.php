@@ -1,6 +1,6 @@
 <?php
     $title = "Home | jamesl.dev";
-    $description = "You've reached the home of James - Junior Software Developer at Accointing by Glassnode, coding in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.";
+    $description = "You've reached the home of James - I do stuff in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.";
     $fullUrl = "https://www.jamesl.dev";
 
     require '../src/utils/include_args.php';
@@ -29,7 +29,7 @@
     <section class="content">
         <h1>Who am I?</h1>
         <p>
-            I'm a front end developer working on React/Next.js at <a href="https://www.accointing.com" target="_blank" rel="nofollow noreferrer">Accointing by Glassnode</a>, based near Bristol and currently working full time. I'm not currently looking for new opportunities, but you can drop me a message anytime using my contact details.
+            I'm a front end developer working on React/Next.js based in Portsmouth and currently open to opportunities. You can drop me a message anytime using my contact details.
         </p>
         <p>
             I've been using Linux and coding recreationally for about 7 years, and I am experienced in Python and PHP, working with WordPress specifically. Now I've worked with React and Next.js for close to 2 years.
@@ -57,7 +57,7 @@
         <h3>Experience</h3>
         <header>
             <h4>Accointing by Glassnode</h4>
-            <p>August 2021 - </p>
+            <p>August 2021 - December 2023</p>
         </header>
         <p>Working in small, cross-functional product teams to deliver features.</p>
         <h5>Skills</h5>
