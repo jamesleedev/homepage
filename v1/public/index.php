@@ -1,6 +1,6 @@
 <?php
     $title = "Home | jamesl.dev";
-    $description = "You've reached the home of James - I do stuff in WordPress, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.";
+    $description = "You've reached the home of James - I do stuff in Python, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK.";
     $fullUrl = "https://www.jamesl.dev";
 
     require '../src/utils/include_args.php';

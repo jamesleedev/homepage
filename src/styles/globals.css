@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply h-full;
+    }
+
+    body {
+        @apply min-h-full;
+    }
+
+    h1 {
+        @apply text-2xl text-emerald-900 font-semibold mb-4;
+    }
+
+    p {
+        @apply text-slate-900 text-base mb-2;
+    }
+
+    a {
+        @apply text-emerald-950 hover:text-emerald-800 font-medium hover:underline;
+    }
+}
