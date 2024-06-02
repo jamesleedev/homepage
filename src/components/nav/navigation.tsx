@@ -1,8 +1,8 @@
-import { cn } from "@utils/utils";
-import Link from "next/link";
-import { type FC } from "react";
+import { cn } from '@utils/utils';
+import Link from 'next/link';
+import { type FC } from 'react';
 
-import { CONTENT } from "./utils";
+import { CONTENT } from './utils';
 
 interface Props {
   currentPath: string;
@@ -22,8 +22,8 @@ export const Navigation: FC<Props> = ({ currentPath }) => {
                 <Link
                   href={item.path}
                   className={cn(
-                    "text-slate-50 underline-offset-8 hover:text-slate-50 hover:underline",
-                    currentPath === item.path && "underline",
+                    'text-slate-50 underline-offset-8 hover:text-slate-50 hover:underline',
+                    currentPath === item.path && 'underline'
                   )}
                 >
                   {item.name}

@@ -22,4 +22,8 @@
     a {
         @apply text-emerald-950 hover:text-emerald-800 font-medium hover:underline;
     }
+
+    section {
+        @apply mb-12;
+    }
 }
