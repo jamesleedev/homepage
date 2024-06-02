@@ -1,5 +1,5 @@
 import { DefaultLayout } from '@components/layouts/default';
-import { Separator } from '@components/ui/ui/separator';
+import { Separator } from '@components/ui/separator';
 import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 

@@ -9,6 +9,7 @@
 
     body {
         @apply min-h-full;
+        print-color-adjust: exact;
     }
 
     h1 {
