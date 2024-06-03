@@ -48,5 +48,8 @@
   "ct3aMetadata": {
     "initVersion": "7.34.0"
   },
-  "packageManager": "npm@10.7.0"
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
 }
