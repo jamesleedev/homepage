@@ -36,7 +36,7 @@ export const DefaultLayout: FC<Props> = ({
       />
       <Navigation currentPath={currentPath} className={navClassName} />
       <div className="bg-slate-100">
-        <main className={cn('container font-sans', className)}>{children}</main>
+        <main className={cn('container font-sans print:m-0 print:p-0', className)}>{children}</main>
       </div>
     </>
   );

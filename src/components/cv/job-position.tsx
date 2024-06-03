@@ -1,20 +1,28 @@
 import { type JobPositionProps } from '@src/types/cv';
 import { type FC } from 'react';
 
-export const JobPosition: FC<JobPositionProps> = ({ company, companyDesc, position, duration, children }) => {
+export const JobPosition: FC<JobPositionProps> = ({
+  company,
+  companyDesc,
+  position,
+  duration,
+  technology,
+  children,
+}) => {
   return (
-    <section className="mb-2 w-full rounded bg-slate-200 p-2">
-      <header className="grid grid-cols-[1fr_140px] gap-8">
+    <section className="mb-5 w-full rounded bg-slate-200 p-4">
+      <header className="mb-5 grid grid-cols-[1fr_170px] gap-16">
         <div>
-          <h1 className="mb-0 text-base font-bold text-slate-700">{company}</h1>
-          {companyDesc ? <p className="text-[10px] leading-tight text-slate-500">{companyDesc}</p> : null}
+          <h1 className="mb-0 text-xl font-bold text-slate-700">{company}</h1>
+          {companyDesc ? <p className="text-xs text-slate-500">{companyDesc}</p> : null}
         </div>
         <div>
-          <p className="mb-0 text-xs text-slate-600">{position}</p>
-          <p className="text-xs text-slate-600">{duration}</p>
+          <p className="mb-0 text-sm text-slate-600">{position}</p>
+          <p className="text-sm text-slate-600">{duration}</p>
+          {technology ? <p className="text-sm text-slate-600">{technology}</p> : null}
         </div>
       </header>
-      <div className="text-xs">{children}</div>
+      <div className="text-sm">{children}</div>
     </section>
   );
 };

@@ -5,5 +5,6 @@ export interface JobPositionProps {
   companyDesc?: string;
   position: string;
   duration: string;
+  technology?: string;
   children: ReactNode;
 }
