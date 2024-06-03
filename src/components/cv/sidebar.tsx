@@ -10,12 +10,12 @@ const skills = {
 
 export const Sidebar: FC = () => {
   return (
-    <div className="h-full bg-emerald-900">
-      <div className="mb-4 bg-emerald-950 py-4">
+    <div className="h-fit bg-emerald-900 lg:h-full">
+      <div className="bg-emerald-950 py-4">
         <h1 className="m-0 text-center text-3xl font-medium text-slate-50">James Lee</h1>
       </div>
-      <div className="flex flex-col gap-6 px-4">
-        <section className="mb-0 [&_p]:text-base [&_p]:text-slate-50">
+      <div className="grid grid-cols-[1fr_1px_1fr] grid-rows-[minmax(0,_1fr)_1px_1fr] gap-6 px-4 py-4 lg:grid-cols-1 lg:grid-rows-none">
+        <section className="col-start-1 mb-0 lg:col-auto lg:row-auto [&_p]:text-base [&_p]:text-slate-50">
           <p>
             <span>
               <GitHubLogoIcon className="mr-4 inline-block h-5 w-5" />
@@ -57,8 +57,8 @@ export const Sidebar: FC = () => {
             </span>
           </p>
         </section>
-        <Separator className="bg-slate-50" />
-        <section className="mb-0">
+        <Separator className="col-start-1 bg-slate-50 lg:col-auto lg:row-auto" />
+        <section className="col-start-1 mb-0 lg:col-auto lg:row-auto">
           <h1 className="mb-2 text-xl font-bold text-slate-50">Education</h1>
           <p className="text-base text-slate-50">
             Computer Science
@@ -68,8 +68,9 @@ export const Sidebar: FC = () => {
           <p className="text-sm text-slate-50">Heriot-Watt University</p>
           <p className="mb-0 text-sm text-slate-400">Jul 2017 - Jul 2021</p>
         </section>
-        <Separator className="bg-slate-50" />
-        <section className="mb-0 [&_p]:text-sm [&_p]:text-slate-50">
+        <Separator className="hidden bg-slate-50 lg:block" />
+        <Separator className="col-start-2 row-span-full bg-slate-50 lg:hidden" orientation="vertical" />
+        <section className="col-start-3 row-span-full mb-0 lg:col-auto lg:row-auto [&_p]:text-sm [&_p]:text-slate-50">
           <h1 className="mb-2 text-xl font-bold text-slate-50">Skills</h1>
           <h2 className="mb-2 text-base italic text-slate-50">Proficient</h2>
           {skills.proficient.map((skill) => (

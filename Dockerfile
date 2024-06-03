@@ -5,7 +5,7 @@ FROM --platform=linux/amd64 node:20.14.0-alpine3.20 AS builder
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_TELEMETRY_DISABLED=1
 
 COPY . .
 
@@ -17,7 +17,8 @@ RUN pnpm install --frozen-lockfile && SKIP_ENV_VALIDATION=1 pnpm run build;
 FROM --platform=linux/amd64 node:20.14.0-bookworm-slim AS runner
 WORKDIR /app
 
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV NODE_ENV="production"
 
 RUN useradd non-root && chown -R non-root /app
 USER non-root

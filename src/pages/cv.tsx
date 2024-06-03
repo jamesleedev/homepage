@@ -1,7 +1,8 @@
 import { Sidebar } from '@components/cv';
 import { JobPosition } from '@components/cv/job-position';
-import { DefaultLayout } from '@components/layouts/default';
+import { Navigation } from '@components/nav';
 import { type JobPositionProps } from '@src/types/cv';
+import { NextSeo } from 'next-seo';
 
 const positions: JobPositionProps[] = [
   {
@@ -67,17 +68,22 @@ const positions: JobPositionProps[] = [
 
 export default function Cv() {
   return (
-    <DefaultLayout
-      seoTitle="CV"
-      seoDescription="James Lee Full CV"
-      currentPath="/cv"
-      navClassName="print:hidden"
-      noIndex
-    >
-      <div className="flex h-full min-h-[100vh] items-center justify-center bg-slate-100 py-24 font-mono print:h-[1123px] print:w-[794px] print:p-0 print:contain-size">
-        <div className="grid h-[1123px] w-[794px] grid-cols-[240px_1fr] bg-slate-300 print:h-[1123px] print:w-[794px]">
+    <>
+      <NextSeo
+        title="CV"
+        description="James Lee Full CV"
+        noindex
+        openGraph={{
+          title: 'CV',
+          description: 'James Lee Full CV',
+          url: 'https://www.jamesl.dev/cv',
+        }}
+      />
+      <Navigation currentPath="/cv" />
+      <div className="flex items-center justify-center bg-slate-600 px-8 py-8 font-mono lg:px-0 lg:py-24 print:h-[1123px] print:w-[794px] print:p-0 print:contain-size">
+        <div className="grid bg-slate-300 lg:h-[1123px] lg:w-[794px] lg:grid-cols-[240px_1fr] print:h-[1123px] print:w-[794px]">
           <Sidebar />
-          <div className="w-full px-3 py-4">
+          <div className="h-fit w-full px-3 py-4 lg:h-full">
             {positions.map((p: JobPositionProps) => (
               <JobPosition
                 key={p.company}
@@ -93,6 +99,6 @@ export default function Cv() {
           </div>
         </div>
       </div>
-    </DefaultLayout>
+    </>
   );
 }
