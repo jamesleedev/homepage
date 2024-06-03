@@ -1,5 +1,6 @@
 import { Sidebar } from '@components/cv';
 import { JobPosition } from '@components/cv/job-position';
+import { DefaultLayout } from '@components/layouts/default';
 import { type JobPositionProps } from '@src/types/cv';
 
 const positions: JobPositionProps[] = [
@@ -72,23 +73,25 @@ const positions: JobPositionProps[] = [
 
 export default function Cv() {
   return (
-    <div className="flex h-full min-h-[100vh] items-center justify-center bg-slate-100 font-mono">
-      <div className="grid h-[842px] w-full max-w-[595px] grid-cols-[180px_1fr] bg-slate-300">
-        <Sidebar />
-        <div className="w-full px-3 py-2">
-          {positions.map((p: JobPositionProps) => (
-            <JobPosition
-              key={p.company}
-              company={p.company}
-              companyDesc={p.companyDesc}
-              position={p.position}
-              duration={p.duration}
-            >
-              {p.children}
-            </JobPosition>
-          ))}
+    <DefaultLayout seoTitle="CV" seoDescription="James Lee Full CV" currentPath="/cv" navClassName="print:hidden">
+      <div className="flex h-full min-h-[100vh] items-center justify-center gap-4 bg-slate-100 font-mono">
+        <div className="grid h-[842px] w-full max-w-[595px] grid-cols-[180px_1fr] bg-slate-300">
+          <Sidebar />
+          <div className="w-full px-3 py-2">
+            {positions.map((p: JobPositionProps) => (
+              <JobPosition
+                key={p.company}
+                company={p.company}
+                companyDesc={p.companyDesc}
+                position={p.position}
+                duration={p.duration}
+              >
+                {p.children}
+              </JobPosition>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </DefaultLayout>
   );
 }

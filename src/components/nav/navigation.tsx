@@ -6,11 +6,12 @@ import { CONTENT } from './utils';
 
 interface Props {
   currentPath: string;
+  className?: string;
 }
 
-export const Navigation: FC<Props> = ({ currentPath }) => {
+export const Navigation: FC<Props> = ({ currentPath, className }) => {
   return (
-    <nav className="bg-emerald-900">
+    <nav className={cn('bg-emerald-900', className)}>
       <div className="container flex flex-col items-center justify-between gap-4 py-4 font-mono md:flex-row md:py-2">
         <div>
           <p className="text-3xl text-slate-50">jamesl.dev</p>

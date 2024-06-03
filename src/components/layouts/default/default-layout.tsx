@@ -8,11 +8,20 @@ interface Props {
   seoDescription: string;
   currentPath: string;
   className?: string;
+  navClassName?: string;
   noIndex?: boolean;
   children: ReactNode;
 }
 
-export const DefaultLayout: FC<Props> = ({ seoTitle, seoDescription, currentPath, noIndex, className, children }) => {
+export const DefaultLayout: FC<Props> = ({
+  seoTitle,
+  seoDescription,
+  currentPath,
+  noIndex,
+  className,
+  navClassName,
+  children,
+}) => {
   return (
     <>
       <NextSeo
@@ -25,7 +34,7 @@ export const DefaultLayout: FC<Props> = ({ seoTitle, seoDescription, currentPath
           url: `https://www.jamesl.dev${currentPath}`,
         }}
       />
-      <Navigation currentPath={currentPath} />
+      <Navigation currentPath={currentPath} className={navClassName} />
       <div className="bg-slate-100">
         <main className={cn('container font-sans', className)}>{children}</main>
       </div>
