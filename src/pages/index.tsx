@@ -1,6 +1,6 @@
 import { DefaultLayout } from '@components/layouts/default';
 import { Separator } from '@components/ui/separator';
-import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
+import { EnvelopeClosedIcon, ExternalLinkIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       seoDescription="You've reached the home of James - I do stuff in Python, React and Next.js, and studied some Computer Science at Heriot-Watt University, UK."
       currentPath="/"
     >
-      <div className="grid grid-cols-1 gap-6 py-8 md:grid-cols-[minmax(0,_1fr)_1px_290px]">
+      <div className="grid grid-cols-1 gap-6 py-8 md:grid-cols-[minmax(0,_1fr)_1px_330px]">
         <div>
           <section>
             <h1>About</h1>
@@ -65,16 +65,22 @@ export default function Home() {
             <span>
               <GitHubLogoIcon className="mr-4 inline h-6 w-6" />
             </span>
-            <a href="https://github.com/jamesleedev" rel="noreferrer noopener">
-              jamesleedev
+            <a href="https://github.com/jamesleedev" rel="noreferrer noopener" target="_blank">
+              <span>jamesleedev</span>
+              <span>
+                <ExternalLinkIcon className="ml-2 inline-block" />
+              </span>
             </a>
           </p>
           <p className="mb-4">
             <span>
               <LinkedInLogoIcon className="mr-4 inline h-6 w-6" />
             </span>
-            <a href="https://www.linkedin.com/in/jamesl-dev" rel="noreferrer noopener">
-              www.linkedin.com/in/jamesl-dev
+            <a href="https://www.linkedin.com/in/jamesl-dev" rel="noreferrer noopener" target="_blank">
+              <span>www.linkedin.com/in/jamesl-dev</span>
+              <span>
+                <ExternalLinkIcon className="ml-2 inline-block" />
+              </span>
             </a>
           </p>
         </section>
