@@ -30,9 +30,14 @@ const positions: JobPositionProps[] = [
     children: (
       <ul className="list-outside list-disc space-y-2 pl-4 text-slate-900">
         <li>
+          Worked in a small, cross-functional product team to maintain and improve multilingual landing pages, focusing
+          on UX and conversion optimisation.
+        </li>
+        <li>
           Collaborated closely with marketing, content, and design teams to optimise conversions and SEO, and personally
           lead the development of new landing pages.
         </li>
+        <li>Implemented custom server side AB testing framework with Next.js middleware.</li>
         <li>
           Conducted investigations into performance and tracking issues, and resolved multiple downtime incidents.
         </li>
@@ -55,7 +60,7 @@ const positions: JobPositionProps[] = [
     technology: 'PHP/Browser DOM JS',
     children: (
       <>
-        <p className="text-sm">Working with clients to create and maintain:</p>
+        <p className="text-sm">Worked with clients to create and maintain:</p>
         <ul className="list-outside list-disc pl-4 text-slate-900">
           <li>product pages on top of WooCommerce</li>
           <li>custom email templates for email marketing & CRM</li>
