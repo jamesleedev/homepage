@@ -15,11 +15,11 @@ export const JobPosition: FC<JobPositionProps> = ({
         <div>
           <h1 className="mb-0 text-xl font-bold text-slate-700">{company}</h1>
           {companyDesc ? <p className="text-xs text-slate-500">{companyDesc}</p> : null}
+          {technology ? <p className="text-xs text-slate-500">{technology}</p> : null}
         </div>
         <div>
           <p className="mb-0 text-sm text-slate-600">{position}</p>
           <p className="text-sm text-slate-600">{duration}</p>
-          {technology ? <p className="text-sm text-slate-600">{technology}</p> : null}
         </div>
       </header>
       <div className="text-sm">{children}</div>

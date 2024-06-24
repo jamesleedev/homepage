@@ -1,6 +1,7 @@
 import { Sidebar } from '@components/cv';
 import { JobPosition } from '@components/cv/job-position';
 import { Navigation } from '@components/nav';
+import { Separator } from '@components/ui/separator';
 import { type JobPositionProps } from '@src/types/cv';
 import { NextSeo } from 'next-seo';
 
@@ -12,13 +13,20 @@ const positions: JobPositionProps[] = [
     duration: 'May 2024 (contract)',
     technology: 'Next.js + TypeScript',
     children: (
-      <ul className="list-outside list-disc space-y-2 pl-4 text-slate-900">
-        <li>Building dashboard and settings pages using Radix UI, Tailwind, ApexCharts, and react-hook-form</li>
-        <li>
-          Working closely with the company founder to integrate existing APIs, then architecting and mocking missing API
-          features such as image upload and date range filtering.
-        </li>
-      </ul>
+      <>
+        <p className="text-sm">
+          Brought into the team as the only frontend engineer to finalise Hashleap’s UI refresh as soon as possible.
+        </p>
+        <Separator className="mx-auto my-4 w-[150px] bg-slate-400" />
+        <ul className="list-outside list-disc space-y-2 pl-4 text-slate-900">
+          <li>Built dashboard and settings pages using Radix UI, Tailwind, ApexCharts, and react-hook-form.</li>
+          <li>
+            Worked closely with the company founder to integrate existing REST APIs, then architecting and mocked
+            missing API features such as image upload and date range filtering.
+          </li>
+          <li>Integrated password authentication with NextAuth, and implemented JWT based password reset flow.</li>
+        </ul>
+      </>
     ),
   },
   {
@@ -28,29 +36,32 @@ const positions: JobPositionProps[] = [
     duration: 'Aug 2021 - Dec 2023',
     technology: 'Next.js + TypeScript',
     children: (
-      <ul className="list-outside list-disc space-y-2 pl-4 text-slate-900">
-        <li>
-          Worked in a small, cross-functional product team to maintain and improve multilingual landing pages, focusing
-          on UX and conversion optimisation.
-        </li>
-        <li>
-          Collaborated closely with marketing, content, and design teams to optimise conversions and SEO, and personally
-          lead the development of new landing pages.
-        </li>
-        <li>Implemented custom server side AB testing framework with Next.js middleware.</li>
-        <li>
-          Conducted investigations into performance and tracking issues, and resolved multiple downtime incidents.
-        </li>
-        <li>
-          Produced developer onboarding guides, tutorials and technical documentation on external dependencies, as well
-          as incident post-mortems.
-        </li>
-        <li>
-          Participated heavily in our CMS selection process, rebranding, adoption of Usercentrics CMP, tracking and
-          analytics with Segment and Amplitude, and code improvement initiatives e.g. Tailwind adoption.
-        </li>
-        <li>Sole maintainer of GhostCMS theme and WordPress blog before transition to Prismic CMS.</li>
-      </ul>
+      <>
+        <p className="text-sm">
+          During my time at Glassnode, I was part of the team responsible for all public-facing websites and their tech
+          stacks. My team collaborated closely with marketing, content, and design teams, focused on accelerating B2C
+          growth, then later adapting to the B2B market segment and strategy.
+        </p>
+        <Separator className="mx-auto my-4 w-[150px] bg-slate-400" />
+        <ul className="list-outside list-disc space-y-2 pl-4 text-slate-900">
+          <li>
+            Worked in a small, cross-functional product team to maintain and improve multilingual landing pages,
+            focusing on UX and conversion optimisation.
+          </li>
+          <li>Led the development of new landing pages.</li>
+          <li>Implemented custom server side AB testing framework with Next.js middleware.</li>
+          <li>
+            Conducted investigations into performance and tracking issues, and resolved multiple downtime incidents,
+            complete with post-mortems.
+          </li>
+          <li>Produced developer onboarding guides, tutorials and technical documentation on external dependencies.</li>
+          <li>
+            Participated heavily in the CMS selection process, acquisition rebranding, adoption of Usercentrics CMP,
+            tracking and analytics with Segment and Amplitude, and code improvement initiatives, e.g. Tailwind adoption.
+          </li>
+          <li>Maintained GhostCMS theme and WordPress blog before transitioning to Prismic CMS.</li>
+        </ul>
+      </>
     ),
   },
   {
@@ -60,11 +71,15 @@ const positions: JobPositionProps[] = [
     technology: 'PHP/Browser DOM JS',
     children: (
       <>
-        <p className="text-sm">Worked with clients to create and maintain:</p>
+        <p className="text-sm">
+          I Worked with an e-commerce client serving UK customers as the company’s only developer to improve their
+          online presence. Later, I focused on developing their online sales funnel.
+        </p>
+        <Separator className="mx-auto my-4 w-[150px] bg-slate-400" />
         <ul className="list-outside list-disc pl-4 text-slate-900">
-          <li>product pages on top of WooCommerce</li>
-          <li>custom email templates for email marketing & CRM</li>
-          <li>Zapier webhook and SendGrid integrations</li>
+          <li>Created product pages on top of WooCommerce.</li>
+          <li>Produced and tested custom email templates for email marketing & CRM.</li>
+          <li>Integrated Zapier webhook and SendGrid.</li>
         </ul>
       </>
     ),
@@ -85,8 +100,8 @@ export default function Cv() {
         }}
       />
       <Navigation currentPath="/cv" />
-      <div className="flex items-center justify-center bg-slate-600 px-8 py-8 font-mono lg:px-0 lg:py-24 print:h-[1123px] print:w-[794px] print:p-0 print:contain-size">
-        <div className="grid bg-slate-300 lg:h-[1123px] lg:w-[794px] lg:grid-cols-[240px_1fr] print:h-[1123px] print:w-[794px]">
+      <div className="flex items-center justify-center bg-slate-600 px-8 py-8 font-mono lg:px-0 lg:py-24 print:h-[1330px] print:w-[940px] print:p-0 print:contain-size">
+        <div className="grid bg-slate-300 lg:h-[1330px] lg:w-[940px] lg:grid-cols-[240px_1fr] print:h-[1330px] print:w-[940px]">
           <Sidebar />
           <div className="h-fit w-full px-3 py-4 lg:h-full">
             {positions.map((p: JobPositionProps) => (
