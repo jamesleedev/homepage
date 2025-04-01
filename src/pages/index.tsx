@@ -16,25 +16,26 @@ export default function Home() {
             <h1>About</h1>
             <p>
               I&apos;m a front end developer working on React/Next.js based in Portsmouth and currently open to
-              opportunities. You can drop me a message anytime using my contact details.
+              opportunities, both full-time and freelance. You can drop me a message anytime using my contact details.
             </p>
             <p>
-              I&apos;ve been using Linux and coding recreationally for about 8 years, and currently running Fedora. In
-              terms of languages and technologies, I have used React and Next.js for 2 and a half years, in addition to
-              Python and PHP where necessary during my career.
+              I&apos;ve been using Linux and coding recreationally for about 10 years, and currently running Fedora. In
+              terms of languages and technologies, I have used React and Next.js for 3 years, in addition to Python and
+              PHP where necessary during my career.
             </p>
             <p>
-              When it comes to tools, I use Notion/Google Keep for note-taking, and Trello/Jira for task management. I
-              code pretty much exclusively in JetBrains IDEs, with Neovim as a text editor when needed after fully
-              embracing the wonderful vim motions.
+              When it comes to tools, I use Notion for pretty much everything, and Jira for work. I code pretty much
+              exclusively in JetBrains IDEs with glorious Vim motions, with Neovim as a text editor when touching a file
+              or two.
             </p>
             <p>
               My PGP key can be found in <Link href="https://www.jamesl.dev/pgp.txt">/pgp.txt</Link>
             </p>
             <p>
-              For more about my professional experiences, you can find my full CV <Link href="/cv">here</Link> or using
-              the navigation.
+              For more about my professional experiences, please check my <Link href="/cv">full CV</Link> or use the
+              navigation.
             </p>
+            <p>Currently learning Go, and trying out Zed.</p>
           </section>
           <section>
             <h1>Projects</h1>
@@ -45,11 +46,22 @@ export default function Home() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                here
+                in my GitHub
               </a>
               .
             </p>
-            <p>I am also working on my personal blog and a few other ideas.</p>
+            <p>
+              There&apos;s also{' '}
+              <a href="https://pwc.jamesl.net" rel="nofollow noopener noreferrer">
+                pwc.jamesl.net
+              </a>
+              , a small tool which counts the number of words in a Spotify playlist.{' '}
+              <a href="https://github.com/jamesleedev/playlist-wordcount" target="_blank" rel="noopener noreferrer">
+                Source code here
+              </a>
+              .
+            </p>
+            <p>Also, planning on creating my own CMS for my personal blog (and maybe a dev blog).</p>
           </section>
         </div>
         <Separator orientation="vertical" className="hidden md:block" />

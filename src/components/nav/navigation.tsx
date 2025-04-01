@@ -23,7 +23,7 @@ export const Navigation: FC<Props> = ({ currentPath, className }) => {
                 <Link
                   href={item.path}
                   className={cn(
-                    'text-slate-50 underline-offset-8 hover:text-slate-50 hover:underline',
+                    'text-slate-50 no-underline underline-offset-8 hover:text-slate-50 hover:underline',
                     currentPath === item.path && 'underline'
                   )}
                 >

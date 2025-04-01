@@ -21,7 +21,7 @@
     }
 
     a {
-        @apply text-emerald-950 hover:text-emerald-800 font-medium hover:underline;
+        @apply text-emerald-950 hover:text-emerald-800 font-medium underline;
     }
 
     section {
