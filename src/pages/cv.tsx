@@ -7,6 +7,26 @@ import { NextSeo } from 'next-seo';
 
 const positions: JobPositionProps[] = [
   {
+    company: 'Glassnode',
+    position: 'Frontend Engineer',
+    duration: 'Aug 2024 - current (part time contract)',
+    technology: 'Next.js + TypeScript',
+    children: (
+      <>
+        <p className="text-sm">
+          Supporting Marketing in refining B2B leads, bought back into the team due to my familiarity with the codebase.
+        </p>
+        <Separator className="mx-auto my-4 w-[150px] bg-slate-400" />
+        <ul className="list-outside list-disc space-y-2 pl-4 text-slate-900">
+          <li>Completed landing pages and pricing page refresh.</li>
+          <li>
+            Updated onboarding survey and multiple contact forms, and implemented new user flows for feature upsells.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     company: 'Hashleap',
     companyDesc: 'Early stage startup for simple B2B crypto payments',
     position: 'Frontend Engineer',
@@ -100,8 +120,8 @@ export default function Cv() {
         }}
       />
       <Navigation currentPath="/cv" />
-      <div className="flex items-center justify-center bg-slate-600 px-8 py-8 font-mono lg:px-0 lg:py-24 print:h-[1330px] print:w-[940px] print:p-0 print:contain-size">
-        <div className="grid bg-slate-300 lg:h-[1330px] lg:w-[940px] lg:grid-cols-[240px_1fr] print:h-[1330px] print:w-[940px]">
+      <div className="flex items-center justify-center bg-slate-600 px-8 py-8 font-mono lg:px-0 lg:py-24 print:h-[1500px] print:w-[1060px] print:p-0 print:contain-size">
+        <div className="grid bg-slate-300 lg:h-[1500px] lg:w-[1060px] lg:grid-cols-[240px_1fr] print:h-[1500px] print:w-[1060px]">
           <Sidebar />
           <div className="h-fit w-full px-3 py-4 lg:h-full">
             {positions.map((p: JobPositionProps) => (
