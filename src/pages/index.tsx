@@ -51,6 +51,13 @@ export default function Home() {
               .
             </p>
             <p>
+              I made some basic mods for Project Zomboid which is also{' '}
+              <a href="https://github.com/jamesleedev/zomboid" rel="noopener noreferrer" target="_blank">
+                in my GitHub
+              </a>
+              .
+            </p>
+            <p>
               There&apos;s also{' '}
               <a href="https://pwc.jamesl.net" rel="nofollow noopener noreferrer">
                 pwc.jamesl.net
@@ -61,7 +68,7 @@ export default function Home() {
               </a>
               .
             </p>
-            <p>Also, planning on creating my own CMS for my personal blog (and maybe a dev blog).</p>
+            <p>Right now, I&apos;m planning on creating my own CMS for my personal blog (and maybe a dev blog).</p>
           </section>
         </div>
         <Separator orientation="vertical" className="hidden md:block" />
