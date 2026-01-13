@@ -1,6 +1,7 @@
+import { Link } from '@components/link';
 import { Separator } from '@components/ui/separator';
+import { ROUTES } from '@constants/routes';
 import { GitHubLogoIcon, GlobeIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
-import Link from 'next/link';
 import { type FC } from 'react';
 
 const skills = {
@@ -21,14 +22,9 @@ export const Sidebar: FC = () => {
               <GitHubLogoIcon className="mr-4 inline-block h-5 w-5" />
             </span>
             <span>
-              <a
-                href="https://github.com/jamesleedev"
-                rel="noreferrer noopener"
-                target="_blank"
-                className="text-slate-50 hover:text-slate-300 hover:no-underline"
-              >
+              <Link route={ROUTES.github} className="text-slate-50 hover:text-slate-300 hover:no-underline">
                 jamesleedev
-              </a>
+              </Link>
             </span>
           </p>
           <p>
@@ -36,14 +32,9 @@ export const Sidebar: FC = () => {
               <LinkedInLogoIcon className="mr-4 inline-block h-5 w-5" />
             </span>
             <span>
-              <a
-                href="https://www.linkedin.com/in/jamesl-dev"
-                rel="noreferrer noopener"
-                target="_blank"
-                className="text-slate-50 hover:text-slate-300 hover:no-underline"
-              >
+              <Link route={ROUTES.linkedin} className="text-slate-50 hover:text-slate-300 hover:no-underline">
                 /in/jamesl-dev
-              </a>
+              </Link>
             </span>
           </p>
           <p className="mb-0">
@@ -51,7 +42,7 @@ export const Sidebar: FC = () => {
               <GlobeIcon className="mr-4 inline-block h-5 w-5" />
             </span>
             <span>
-              <Link href="/" className="text-slate-50 hover:text-slate-300 hover:no-underline">
+              <Link route={ROUTES.home} className="text-slate-50 hover:text-slate-300 hover:no-underline">
                 jamesl.dev
               </Link>
             </span>

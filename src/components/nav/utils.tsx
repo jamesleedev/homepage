@@ -1,3 +1,5 @@
+import { ROUTES } from '@constants/routes';
+
 export interface NavItem {
   path: string;
   name: string;
@@ -5,11 +7,11 @@ export interface NavItem {
 
 export const CONTENT: NavItem[] = [
   {
-    path: '/',
+    path: ROUTES.home.href,
     name: 'Home',
   },
   {
-    path: '/cv',
+    path: ROUTES.cv.href,
     name: 'CV',
   },
 ];
