@@ -34,4 +34,8 @@ export const ROUTES = {
     href: 'https://github.com/jamesleedev/playlist-wordcount',
     external: true,
   },
+  projectHomepage: {
+    href: 'https://github.com/jamesleedev/homepage',
+    external: true,
+  },
 } satisfies Routes;
