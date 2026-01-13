@@ -15,7 +15,7 @@ export default function Home() {
           <section>
             <h1>About</h1>
             <p>
-              I&apos;m a front end developer working on React/Next.js based in Portsmouth and currently open to
+              I&apos;m a front end developer working on React/Next.js based near London and currently open to
               opportunities, both full-time and freelance. You can drop me a message anytime using my contact details.
             </p>
             <p>
@@ -35,7 +35,7 @@ export default function Home() {
               For more about my professional experiences, please check my <Link href="/cv">full CV</Link> or use the
               navigation.
             </p>
-            <p>Currently learning Go, and trying out Zed.</p>
+            <p>Currently learning Go via Boot.dev, and trying out Zed.</p>
           </section>
           <section>
             <h1>Projects</h1>
@@ -68,7 +68,7 @@ export default function Home() {
               </a>
               .
             </p>
-            <p>Right now, I&apos;m planning on creating my own CMS for my personal blog (and maybe a dev blog).</p>
+            <p>Right now, I&apos;m creating my own habit tracking Android app, and my own reading list web app.</p>
           </section>
         </div>
         <Separator orientation="vertical" className="hidden md:block" />
