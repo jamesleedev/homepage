@@ -15,7 +15,7 @@ export const Sidebar: FC = () => {
         <h1 className="m-0 text-center text-3xl font-medium text-slate-50">James Lee</h1>
       </div>
       <div className="grid grid-cols-[1fr_1px_1fr] grid-rows-[minmax(0,_1fr)_1px_1fr] gap-6 px-4 py-4 lg:grid-cols-1 lg:grid-rows-none">
-        <section className="col-start-1 mb-0 lg:col-auto lg:row-auto [&_p]:text-base [&_p]:text-slate-50">
+        <section className="col-start-1 row-start-3 mb-0 lg:col-auto lg:row-auto [&_p]:text-base [&_p]:text-slate-50">
           <p>
             <span>
               <GitHubLogoIcon className="mr-4 inline-block h-5 w-5" />
@@ -58,7 +58,7 @@ export const Sidebar: FC = () => {
           </p>
         </section>
         <Separator className="col-start-1 bg-slate-50 lg:col-auto lg:row-auto" />
-        <section className="col-start-1 mb-0 lg:col-auto lg:row-auto">
+        <section className="col-start-1 row-start-1 mb-0 lg:col-auto lg:row-auto">
           <h1 className="mb-2 text-xl font-bold text-slate-50">Education</h1>
           <p className="text-base text-slate-50">
             Computer Science
