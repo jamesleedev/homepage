@@ -42,9 +42,6 @@
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"
   },
-  "ct3aMetadata": {
-    "initVersion": "7.34.0"
-  },
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
