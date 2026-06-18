@@ -1,6 +1,6 @@
 ### Builder
 
-FROM --platform=linux/amd64 node:20.14.0-alpine3.20 AS builder
+FROM --platform=linux/amd64 node:24.17.0-alpine3.24 AS builder
 
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN npm i -g pnpm;
 RUN pnpm install --frozen-lockfile && SKIP_ENV_VALIDATION=1 pnpm run build;
 
 ### Runner
-FROM --platform=linux/amd64 node:20.14.0-bookworm-slim AS runner
+FROM --platform=linux/amd64 node:24.17.0-trixie-slim AS runner
 WORKDIR /app
 
 ENV NEXT_TELEMETRY_DISABLED=1

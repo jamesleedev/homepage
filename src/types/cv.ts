@@ -8,3 +8,7 @@ export interface JobPositionProps {
   technology?: string;
   children: ReactNode;
 }
+
+export interface JobPositions extends JobPositionProps {
+  id: number;
+}

@@ -2,11 +2,12 @@ import { Sidebar } from '@components/cv';
 import { JobPosition } from '@components/cv/job-position';
 import { Navigation } from '@components/nav';
 import { Separator } from '@components/ui/separator';
-import { type JobPositionProps } from '@src/types/cv';
+import { type JobPositions } from '@src/types/cv';
 import { NextSeo } from 'next-seo';
 
-const positions: JobPositionProps[] = [
+const positions: JobPositions[] = [
   {
+    id: 1,
     company: 'Glassnode',
     position: 'Frontend Engineer',
     duration: 'Aug 2024 - current (part time contract)',
@@ -27,6 +28,7 @@ const positions: JobPositionProps[] = [
     ),
   },
   {
+    id: 2,
     company: 'Hashleap',
     companyDesc: 'Early stage startup for simple B2B crypto payments',
     position: 'Frontend Engineer',
@@ -50,6 +52,7 @@ const positions: JobPositionProps[] = [
     ),
   },
   {
+    id: 3,
     company: 'Glassnode',
     companyDesc: 'BTC and ETH analytics, indicators, and charts',
     position: 'Software Engineer I',
@@ -85,6 +88,7 @@ const positions: JobPositionProps[] = [
     ),
   },
   {
+    id: 4,
     company: 'Freelance',
     position: 'Frontend Engineer',
     duration: 'Aug 2020 - Aug 2021',
@@ -124,9 +128,9 @@ export default function Cv() {
         <div className="grid bg-slate-300 lg:h-[1500px] lg:w-[1060px] lg:grid-cols-[240px_1fr] print:h-[1500px] print:w-[1060px]">
           <Sidebar />
           <div className="h-fit w-full px-3 py-4 lg:h-full">
-            {positions.map((p: JobPositionProps) => (
+            {positions.map((p: JobPositions) => (
               <JobPosition
-                key={p.company}
+                key={p.id}
                 company={p.company}
                 companyDesc={p.companyDesc}
                 position={p.position}
