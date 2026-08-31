@@ -3,7 +3,8 @@ import { JobPosition } from '@components/cv/job-position';
 import { Navigation } from '@components/nav';
 import { Separator } from '@components/ui/separator';
 import { type JobPositions } from '@src/types/cv';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
+import Head from 'next/head';
 
 const positions: JobPositions[] = [
   {
@@ -113,16 +114,18 @@ const positions: JobPositions[] = [
 export default function Cv() {
   return (
     <>
-      <NextSeo
-        title="CV"
-        description="James Lee Full CV"
-        noindex
-        openGraph={{
+      <Head>
+        {generateNextSeo({
           title: 'CV',
           description: 'James Lee Full CV',
-          url: 'https://www.jamesl.dev/cv',
-        }}
-      />
+          noindex: true,
+          openGraph: {
+            title: 'CV',
+            description: 'James Lee Full CV',
+            url: 'https://www.jamesl.dev/cv',
+          },
+        })}
+      </Head>
       <Navigation currentPath="/cv" />
       <div className="flex items-center justify-center bg-slate-600 px-8 py-8 font-mono lg:px-0 lg:py-24 print:h-[1500px] print:w-[1060px] print:p-0 print:contain-size">
         <div className="grid bg-slate-300 lg:h-[1500px] lg:w-[1060px] lg:grid-cols-[240px_1fr] print:h-[1500px] print:w-[1060px]">

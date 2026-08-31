@@ -9,7 +9,6 @@ const config = {
   arrowParens: 'always',
   tabWidth: 2,
   useTabs: false,
-  tailwindConfig: './tailwind.config.ts',
 };
 
 export default config;
