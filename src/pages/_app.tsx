@@ -46,7 +46,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           },
         })}
       </Head>
-      <div className={`${inter.variable} ${jetBrainsMono.variable}`}>
+      <div className={`${inter.variable} ${jetBrainsMono.variable} font-sans`}>
         <Component {...pageProps} />
       </div>
     </>
