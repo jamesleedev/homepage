@@ -11,7 +11,7 @@ const positions: JobPositions[] = [
     id: 1,
     company: 'Glassnode',
     position: 'Frontend Engineer',
-    duration: 'Aug 2024 - current (part time contract)',
+    duration: 'Aug 2024 - Apr 2026 (contract)',
     technology: 'Next.js + TypeScript',
     children: (
       <>

@@ -11,4 +11,4 @@ echo "##### Removing existing homepage container #####"
 sudo docker rm -f homepage 2> /dev/null || true
 
 echo "##### Running homepage:${LATEST_TAG} #####"
-sudo docker run --restart unless-stopped --name "homepage" -d $IMAGE
+sudo docker run --restart unless-stopped --name "homepage" -p 3000:3000 -d $IMAGE

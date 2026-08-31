@@ -17,8 +17,8 @@ export default function Home() {
           <section>
             <h1>About</h1>
             <p>
-              I&apos;m a front end developer working on React/Next.js based near London and currently open to
-              opportunities, both full-time and freelance. You can drop me a message anytime using my contact details.
+              I&apos;m a freelance front end developer working on a variety of projects, based near London. You can drop
+              me a message anytime using my contact details.
             </p>
             <p>
               I&apos;ve been using Linux and coding recreationally for about 10 years, and currently running Fedora. In
@@ -26,9 +26,9 @@ export default function Home() {
               PHP where necessary during my career.
             </p>
             <p>
-              When it comes to tools, I use Notion for pretty much everything when it comes to organisation, and Jira
-              for work. I code pretty much exclusively in JetBrains IDEs with glorious Vim motions, with Neovim as a
-              text editor when touching a file or two.
+              When it comes to tools, I use Notion for pretty much everything when it comes to organisation I code
+              pretty much exclusively in JetBrains IDEs with glorious Vim motions, with Neovim as a text editor when
+              touching a file or two.
             </p>
             <p>
               My PGP key can be found in{' '}
